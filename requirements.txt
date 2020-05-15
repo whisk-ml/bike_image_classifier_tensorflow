@@ -1,0 +1,37 @@
+# Installs bike_image_classifier_tensorflow as a local package. This makes it accessible
+# via `import bike_image_classifier_tensorflow` in Python.
+-e .
+
+# Adds the whisk cli, directory helpers, etc.
+whisk==0.1.26
+
+### whisk project requirements
+ipykernel # creating the `bike_image_classifier_tensorflow` kernel
+python-dotenv # access env vars defined in a .env file from Python code
+dvc # Data Version Control (DVC) for versioning data and pipelines
+boto3 # AWS API for S3 bucket management needed for DVC remotes
+Flask==1.1.2 # Web service HTTP API
+honcho==1.0.1 # Procfile support
+gunicorn==20.0.4 # App server for Flask app
+tox==3.15.0 # Testing the package in insolation and across Python versions
+twine==1.14.0 # Package distribution
+pytest==4.6.5 # Tests
+pytest-runner==5.1 # Tests
+
+### Common Data Science Packages
+# Already have a list of project requirements? Remove conflicting packages.
+cloudpickle # For serializing constructs that Pickle can't.
+ipython
+jupyter
+matplotlib
+numpy
+pandas
+plotly
+requests
+seaborn
+scikit-learn
+scipy
+simplejson
+sqlalchemy
+
+### Add project-specific requirements below. ###

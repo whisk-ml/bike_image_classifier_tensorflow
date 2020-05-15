@@ -1,0 +1,2 @@
+include requirements.txt
+graft src/bike_image_classifier_tensorflow/artifacts/
