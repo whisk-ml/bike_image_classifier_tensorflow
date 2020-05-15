@@ -46,6 +46,3 @@ Mountain: 0.12031126, Road: 0.87968874
 --------
 
 <p><small>Project built with the <a target="_blank" href="https://github.com/whisk-ml/whisk">whisk ML project framework</a> based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
-
-
-curl --location --request POST 'http://127.0.0.1:5000/predict' --header 'Content-Type: application/json' --data-raw '{"data":["https://whisk-examples.s3.amazonaws.com/bike-images/full_2020_strive-cf-7-0_2239_tm_P5.png"]}'
