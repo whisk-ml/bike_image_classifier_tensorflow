@@ -17,11 +17,11 @@ setup(
     # You can test that the package works and contains needed dependencies by running `tox` from the
     # command line. tox tests the package in an isoloated venv.
     install_requires=[
-        'whisk==0.1.26'
+        'whisk==0.1.26', 'tensorflow-cpu', 'validators', 'Pillow'
     ],
     entry_points={
         'console_scripts': [
-            'bike_image_classifier_tensorflow=bike_image_classifier_tensorflow.cli.main:cli',
+            'bike_image_classifier=bike_image_classifier_tensorflow.cli.main:cli',
         ],
     },
     description='A short description of the project.',

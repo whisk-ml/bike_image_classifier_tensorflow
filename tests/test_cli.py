@@ -16,6 +16,6 @@ def test_cli():
 def test_predict_via_cli():
     """Test generating a model prediction via the CLI."""
     runner = CliRunner()
-    result = runner.invoke(cli, ['predict','[[1,2],[3,4]]'])
+    result = runner.invoke(cli, ['predict',"[\"https://whisk-examples.s3.amazonaws.com/bike-images/mountain_bike.jpg\"]"])
     assert result.exit_code == 0, "Predict failed with error: "+ result.output
     assert len(result.output) > 0
