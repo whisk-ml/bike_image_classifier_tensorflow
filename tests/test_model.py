@@ -4,4 +4,4 @@ from bike_image_classifier_tensorflow.models.model import Model
 
 def test_predict():
     model = Model()
-    model.predict([[1,2],[3,4]])
+    model.predict(["https://whisk-examples.s3.amazonaws.com/bike-images/mountain_bike.jpg"])
