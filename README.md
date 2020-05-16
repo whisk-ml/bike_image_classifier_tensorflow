@@ -34,11 +34,11 @@ After running the setup, you an invoke the model from the command line. We have 
 - [Road Bike Example](https://whisk-examples.s3.amazonaws.com/bike-images/road_bike.jpg)
 
 ```
-$ bike_image_classifier_tensorflow predict [\"https://whisk-examples.s3.amazonaws.com/bike-images/mountain_bike.jpg\"]
+$ bike_image_classifier predict [\"https://whisk-examples.s3.amazonaws.com/bike-images/mountain_bike.jpg\"]
 
 Mountain: 0.9900122, Road: 0.009987746
 
-$ bike_image_classifier_tensorflow predict [\"https://whisk-examples.s3.amazonaws.com/bike-images/road_bike.jpg\"]
+$ bike_image_classifier predict [\"https://whisk-examples.s3.amazonaws.com/bike-images/road_bike.jpg\"]
 
 Mountain: 0.12031126, Road: 0.87968874
 ```
